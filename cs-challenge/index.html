@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/simple-grid.min.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="showPage('page1')">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!--page 1-->
+    <div class="content-1" id="page1" style="display: none">
+      <div class="row">
+        <div class="column" style="width: 50%">
+          <a href="https://www.facebook.com/ieee.cs.issatm">
+            <img class="cs-logo" src="img/cs.png" />
+          </a>
+        </div>
+        <div class="column" style="width: 40%">
+          <a href="https://tsyp.ieee.tn/" target="_blank">
+            <img class="main-logo" src="img/tsyp.png" />
+          </a>
+        </div>
+      </div>
+
+      <div id="title">
+        <span class="anim-typewriter"
+          >Future astronauts welcome to the mars experience</span
+        >
+      </div>
+      <button class="next-btn" onclick="next('page1', 'page2')">Next</button>
+    </div>
+
+    <div id="logos" style="display: none; width: 100%">
+      <img
+        src="img/header.png"
+        width="400px"
+        style="display: block; margin: auto"
+      />
+    </div>
+
+    <!--page 2-->
+    <div class="page" id="page2">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card">
+            <div class="normal-text">
+              <h3>
+                A segmentation network using convolutional neural networks is
+                successfully implemented to find 65%–76% of craters in common
+                with a human annotated dataset.
+              </h3>
+              <p>
+                This method uses different feature maps with multi-scale
+                receptive fields to detect multiscale impact craters from
+                remotely sensed planetary images. Moreover, semantic
+                segmentation models based on U-net have been presented to detect
+                craters. Silburtet et al. proposed DeepMoon based on the U-net
+                network structure to recognize lunar craters from DEM data. This
+                successfully achieved a recall rate of 81.2% and a precision
+                rate of 75.4% in lunar crater recognition when training 30,000
+                DEM data images. Furthermore, to explore craters on Mars,
+                DeLatte et al. employed segmentation convolution neural networks
+                based on U-net for automatic crater detection from Martian
+                daytime infra-red images. This method identified 65-75% of
+                craters in common with a human-annotated dataset, and used the
+                ResUNET model to detect craters with the global maps and
+                infra-red imagery for Mars
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card img">
+            <div>
+              <img src="img/mars.gif" width="600" />
+              <div class="text">ddd</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page2', 'page3')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 3-->
+    <div class="page" id="page3">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card">
+            <div>
+              <img src="img/nayzek.gif" width="600" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card">
+            <div>
+              <div class="normal-text">
+                <h3>
+                  Automated Crater Detection Algorithms from a Machine Learning
+                  Perspective in the Convolutional Neural Network Era
+                </h3>
+                <p>
+                  The successful use of CNNs for classification started in 2015
+                  (Emami et al., 2015) and 2016 . Segmentation is being applied
+                  more recently (DeLatte et al., 2019;Silburt et al., 2019).
+                  Applying this research has the potential to reduce the time
+                  spent counting craters by hand, provide a more consistent
+                  application of a crater counting technique (labeling varies
+                  between experts and even between areas done by the same
+                  expert), and eventually provide a list of smaller craters
+                  without human counting as the techniques and resolution of
+                  imagery improves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page3', 'page4')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 4-->
+    <div class="page" id="page4">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card">
+            <div class="normal-text">
+              <h3>
+                Squeezing Data from a Rock: Machine Learning for Martian Science
+              </h3>
+              <p>
+                Machine learning has the potential to help map and classify a
+                large variety of both features and properties on the surface of
+                Mars and to aid in the planning and execution of future
+                missions.
+              </p>
+              <p>
+                Here, we outline the current extent of machine learning as
+                applied to Mars, summarize why machine learning should be an
+                important tool for planetary geomorphology in particular, and
+                suggest numerous research avenues and funding priorities for
+                future efforts. We conclude that: (1) moving toward methods that
+                require less human input (i.e., self- or semi-supervised) is an
+                important paradigm shift for Martian applications, (2) new
+                robust methods using generative adversarial networks to generate
+                synthetic high-resolution digital terrain models represent an
+                exciting new avenue for Martian geomorphologists, (3) more
+                effort and money must be directed toward developing standardized
+                datasets and benchmark tests, and (4) the community needs a
+                large-scale, generalized, and programmatically accessible
+                geographic information system (GIS).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card img">
+            <div>
+              <img src="img/page4.jpg" width="600" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page4', 'page5')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 5-->
+    <div class="page" id="page5">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card img">
+            <div>
+              <img src="img/page5.png" width="600" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card">
+            <div class="normal-text">
+              <h3>
+                Deep Domain Adaptation for Detecting Bomb Craters in Aerial
+                Images
+              </h3>
+              <p>
+                The aftermath of air raids can still be seen for decades after
+                the devastating events. Unexploded ordnance (UXO) is an immense
+                danger to human life and the environment. Through the assessment
+                of wartime images, experts can infer the occurrence of a dud.
+                The current manual analysis process is expensive and
+                time-consuming, thus automated detection of bomb craters by
+                using deep learning is a promising way to improve the UXO
+                disposal process. However, these methods require a large amount
+                of manually labeled training data. This work leverages domain
+                adaptation with moon surface images to address the problem of
+                automated bomb crater detection with deep learning under the
+                constraint of limited training data. This paper contributes to
+                both academia and practice by providing a solution approach for
+                automated bomb crater detection with limited training data and
+                by demonstrating the usability and associated challenges of
+                using synthetic images for domain adaptation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page5', 'page6')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 6-->
+    <div class="page" id="page6">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card">
+            <div class="normal-text">
+              <h3>
+                Autonomous crater detection on asteroids using a
+                fully-convolutional neural network
+              </h3>
+              <p>
+                This paper shows the application of autonomous Crater Detection
+                using the U-Net, a Fully-Convolutional Neural Network, on Ceres.
+                The U-Net is trained on optical images of the Moon Global
+                Morphology Mosaic based on data collected by the LRO and manual
+                crater catalogues. The Moon-trained network will be tested on
+                Dawn optical images of Ceres: this task is accomplished by means
+                of a Transfer Learning (TL) approach. The trained model has been
+                fine-tuned using 100, 500 and 1000 additional images of Ceres.
+                The test performance was measured on 350 never before seen
+                images, reaching a testing accuracy of 96.24%, 96.95% and
+                97.19%, respectively. This means that despite the intrinsic
+                differences between the Moon and Ceres, TL works with
+                encouraging results. The output of the U-Net contains predicted
+                craters: it will be post-processed applying global thresholding
+                for image binarization and a template matching algorithm to
+                extract craters positions and radii in the pixel space.
+                Post-processed craters will be counted and compared to the
+                ground truth data in order to compute image segmentation
+                metrics: precision, recall and F1 score. These indices will be
+                computed, and their effect will be discussed for tasks such as
+                automated crater cataloguing and optical navigation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card img">
+            <div>
+              <img src="img/page6.png" width="600" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page6', 'page7')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 7-->
+    <div class="page" id="page7">
+      <div class="row" style="height: 60%">
+        <div class="col-6 category">
+          <div class="card img">
+            <div>
+              <img src="img/page7.png" width="600" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 category">
+          <div class="card">
+            <div class="normal-text">
+              <h3>
+                A New Approach Based on Crater Detection and Matching for
+                Self-Localization During Lunar Landings March 2022
+              </h3>
+              <p>
+                This paper provides an approach of visual localization based on
+                crater detection and matching in lunar landing missions.
+                Firstly, considering that the lunar image intensity is not
+                uniform, and the contrast between the bright and dark areas is
+                not obvious, a multi-threshold segmentation method based on gray
+                features and geometric constraints is introduced to realize
+                automatic extraction of multi-scale craters. Secondly, by
+                constructing a rigid transformation model, the craters in
+                descent images are roughly matched with the corresponding
+                craters in database. Meanwhile, an efficient method using
+                re-projection errors is proposed for reducing false matches so
+                as to improve the localization accuracy. Images taken by
+                Chang’e-3 landing camera and Lunar Reconnaissance Orbiter (LRO)
+                are utilized to test the performance of the proposed approach.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="width: 100%; text-align: center">
+          <button class="next-btn" onclick="next('page7', 'page8')">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--page 8-->
+    <div class="content-1" id="page8" style="display: none">
+      <div class="row">
+        <div class="column" style="width: 50%">
+          <a href="https://www.facebook.com/ieee.cs.issatm">
+            <img class="cs-logo" src="img/cs.png" />
+          </a>
+        </div>
+        <div class="column" style="width: 40%">
+          <a href="https://tsyp.ieee.tn/" target="_blank">
+            <img class="main-logo" src="img/tsyp.png" />
+          </a>
+        </div>
+      </div>
+
+      <div id="title">
+        <span class="anim-typewriter"
+          >Thank you for joining us on this journey through the cosmos.</span
+        >
+      </div>
+      <button class="next-btn" onclick="next('page8', 'page1')">Return</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
